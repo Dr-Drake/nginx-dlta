@@ -10,7 +10,8 @@ Create your heroku app
 heroku apps:create -a <NAME>	
 ```
 
-Build the Docker
+Build the Docker Image
+
 Note: You need to have docker installed on your system
 
 ```bash
@@ -22,7 +23,9 @@ Then push it up to a heroku conytainer:
 heroku container:release web - a <NAME>
 ```
 
-That's it. If you now run `heroku open -a <NAME>` you should see your Heroku app reverse-proxying whatever URL you put in the config.
+That's it. 
+
+If you now run `heroku open -a <NAME>` you should see your Heroku app reverse-proxying whatever URL you put in the config.
 
 Huge Inspiration: https://www.thisdot.co/blog/setting-up-reverse-proxy-in-heroku-using-nginx
 
